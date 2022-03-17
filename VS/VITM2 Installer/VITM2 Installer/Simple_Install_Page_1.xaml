@@ -1,0 +1,14 @@
+﻿<Window x:Class="VITM2_Installer.Simple_Install_Page_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VITM2_Installer"
+        mc:Ignorable="d"
+        Title="VITM2 Python Installer" Height="300" Width="389"
+        MinHeight="300" MaxHeight="300" MinWidth="389" MaxWidth="389">
+    <Grid>
+        
+
+    </Grid>
+</Window>

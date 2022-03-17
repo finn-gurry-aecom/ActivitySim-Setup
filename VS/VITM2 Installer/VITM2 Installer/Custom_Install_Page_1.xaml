@@ -1,0 +1,26 @@
+﻿<Window x:Class="VITM2_Installer.Manual_Install_Page_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VITM2_Installer"
+        mc:Ignorable="d"
+        Title="VITM2 Python Installer" Height="300" Width="389"
+        MinHeight="300" MaxHeight="300" MinWidth="389" MaxWidth="389">
+    <Grid>
+        <ComboBox x:Name="Combo_Distributor" HorizontalAlignment="Left" Margin="34,56,0,0" VerticalAlignment="Top" Width="120" DropDownClosed="Combo_Distributor_DropDownClosed">
+            <ComboBoxItem Content="Anaconda"/>
+            <ComboBoxItem Content="Miniforge"/>
+            <ComboBoxItem Content="No distribution"/>
+            <!--<ComboBoxItem Content="Docker (not supported)"/>-->
+        </ComboBox>
+        <TextBlock x:Name="Text_Python_Dist" HorizontalAlignment="Left" Margin="34,32,0,0" Text="Python Distribution Platform" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Button x:Name="Install_Button" Content="Install" HorizontalAlignment="Left" Margin="233,230,0,0" VerticalAlignment="Top" Width="50" Grid.Row="1" Click="Install_Button_Click"/>
+        <Button x:Name="Cancel_Button" Content="Cancel" HorizontalAlignment="Left" Margin="107,230,0,0" VerticalAlignment="Top" Width="50" Grid.Row="1" Click="Cancel_Button_Click"/>
+        <TextBlock x:Name="Text_Install_Missing" HorizontalAlignment="Left" Margin="34,83,0,0" Text="Install location for Anaconda not found. Please provide the location of a Anaconda installation:" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" Visibility="Hidden"/>
+        <Button x:Name="Browse_Button" Content="Browse..." HorizontalAlignment="Left" Margin="295,142,0,0" VerticalAlignment="Top" Click="Browse_Button_Click" Visibility="Hidden"/>
+        <TextBox x:Name="Distribution_Path" HorizontalAlignment="Left" Margin="34,142,0,0" TextWrapping="NoWrap"  VerticalAlignment="Top" Width="256" Height="20" Visibility="Hidden"/>
+        <TextBlock x:Name="Progress_Text" HorizontalAlignment="Left" Margin="34,175,0,0" Text="Installing ActivitySim envrionment"  TextWrapping="Wrap" Visibility="Hidden" VerticalAlignment="Top"/>
+        <ProgressBar x:Name="Progress_Env_Create" HorizontalAlignment="Left" Height="18" Margin="34,193,0,0" VerticalAlignment="Top" Width="311" Visibility="Hidden" IsIndeterminate="True"/>
+    </Grid>
+</Window>
